@@ -7,7 +7,7 @@
 }
 
 nav {
-    background-color: aqua;
+    background-color: #00bcd4;
     height: 70px;
     width: 100%;
 }
@@ -50,15 +50,16 @@ nav {
     font-weight: 400;
 }
 
-.mainbody .intro {
-    background-color: white;
-    height: 80vh;
+.intro {
+    height: 400px;
     display: flex;
+    margin-bottom: 5px;
 }
 
 .intro .about {
+    height: 400px;
     flex-basis: 50%;
-    padding: 130px 60px;
+    padding: 50px 60px;
 }
 
 .intro .about h3 {
@@ -67,7 +68,7 @@ nav {
 }
 
 .intro .about h1 {
-    font-size: 72px;
+    font-size: 60px;
     margin: 10px auto;
 }
 
@@ -76,40 +77,252 @@ nav {
 }
 
 .intro .image {
-    margin: auto;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro .image #rocket {
+    height: 390px;
 }
 
 .timings {
-    height: 500vh;
+    width: 100%;
+    height: 250px;
     padding: 20px 60px;
 }
 
 .timings .container {
-    border-radius: 15px;
-    padding: 60px 20px;
     background-color: #efefef;
     display: flex;
+    border-radius: 15px;
 }
 
 .container .dates {
-    width: 80%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    width: 24.8%;
     text-align: center;
 }
 
 .container .dates h1 {
-    font-size: 42px;
+    font-size: 40px;
+    margin: 5px auto;
 }
 
 .container .dates h3 {
     color: red;
-    margin: 5px auto;
+    margin: 5px auto 30px auto;
 }
 
 .container .divider {
-    height: 100px;
-    width: 10px;
-    background-color: aqua;
+    margin: 15px 0px;
+    width: 0.2%;
+    height: 140px;
+    border: #00bcd4 0.2px dotted;
+}
+
+.container .active {
+    background-color: #00bcd4;
+}
+
+.aboutCource {
+    padding: 10px 60px;
+    display: flex;
+}
+
+.aboutCource .courceTimings {
+    background-color: #00bcd4;
+    width: 30%;
+    flex-basis: 30%;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.courceTimings h1,
+.courceDetails h1 {
+    font-size: 40px;
+    margin: 5px auto;
+}
+
+.courceTimings h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 5px auto;
+}
+
+.courceTimings p {
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.aboutCource .courceDetails {
+    width: 70%;
+    flex-basis: 70%;
+    margin: 0px 60px;
+}
+
+.courceDetails p {
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.courceDetails input {
+    outline: none;
+    border-radius: 11px;
+    font-size: 23px;
+    height: 60px;
+    width: 150px;
+    padding: 2px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.benifits {
+    padding: 5px 60px;
+    width: 100%;
+}
+
+.benifits h1 {
+    margin: 0px 0px 10px 0px;
+    font-size: 40px;
+}
+
+.benifits .mainBenifits {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.mainBenifits .steps {
+    width: 33%;
+    flex-basis: 33%;
+    display: flex;
+    align-items: center;
+}
+
+.mainBenifits .steps p {
+    font-size: 15px;
+}
+
+
+.mainBenifits .steps #img {
+    margin: 1px auto;
+}
+
+.signuphint {
+    padding: 5px 60px;
+    width: 100%;
+    height: 350px;
+    background-color: #302e5a;
+    display: flex;
+}
+
+.signuphint .hints {
+    width: 33%;
+}
+
+.signuphint .hints .img {
+    height: 400px;
+}
+
+.signuphint .hints h1 {
+    margin: 1px auto;
+    color: #00bcd4;
+    text-align: center;
+    font-size: 39px;
+}
+
+.signuphint .hints p {
+    margin: 10px auto;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.signuphint .hints input {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: red;
     outline: none;
     border: none;
-    margin: auto 80px;
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.tutors {
+    width: 100%;
+    display: flex;
+    padding: 10px 60px;
+}
+
+.tutors .maintutors {
+    width: 33%;
+    flex-basis: 40%;
+}
+
+.tutors .maintutors h1 {
+    font-size: 40px;
+}
+
+.tutors .maintutors img {
+    width: 90%;
+    height: 80%;
+    margin: 1px auto;
+    border-radius: 60%;
+    background-color: #efefef;
+}
+
+.tutors .maintutors h3 {
+    text-align: center;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.tutors .maintutors p {
+    text-align: center;
+    margin: 10px;
+}
+
+.venue {
+    width: 100%;
+    padding: 60px;
+    display: flex;
+}
+
+.venue .one {
+    width: 60%;
+}
+
+.venue .one img {
+    width: 550px;
+}
+
+.venue .two {
+    width: 40%;
+    padding: 0px 20px 0px 60px;
+}
+
+.venue .two h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.venue .two p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.venue .two h3 {
+    color: red;
+    font-size: 20px;
 }
